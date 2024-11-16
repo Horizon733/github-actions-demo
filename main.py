@@ -8,7 +8,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=2, format="%(asctime)-15s %(levelname)-8s %(message)s")
 
 
 @app.post("/tell_joke")
