@@ -5,3 +5,4 @@ fmt:
 
 lint:
 	pre-commit run
+

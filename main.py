@@ -14,10 +14,7 @@ logger = logging.getLogger(__name__)
 async def tell_joke(topic: Text = "") -> Text:
     response = ollama.generate(
         model="llama3.1",
-        prompt=f"""
-    You are a good assistant
-    Tell me a funny joke about {topic}
-""",
+        prompt=f"""You are a good assistant Tell me a funny joke about {topic}""",
     )
     logger.debug(response)
     return response["response"]
